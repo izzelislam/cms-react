@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* scroll smoth */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* apply style */
+@layer components {
+  .btn-success {
+    @apply bg-[#0D9488] text-white px-4 py-2 rounded-md mt-8 hover:bg-[#8cf2ea] hover:text-[#0D9488] transition-all duration-300
+  }
+}
