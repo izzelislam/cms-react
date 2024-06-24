@@ -8,11 +8,20 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Rubik', sans-serif;
+  background-color: #F8FAFC;
 }
 
 /* apply style */
 @layer components {
   .btn-success {
     @apply bg-[#0D9488] text-white px-4 py-2 rounded-md mt-8 hover:bg-[#8cf2ea] hover:text-[#0D9488] transition-all duration-300
+  }
+
+  .btn-dashboard {
+    @apply flex items-center my-2 px-2 py-3 rounded-lg text-gray-600 hover:bg-gray-900 hover:text-slate-100 transition-all duration-300 cursor-pointer
+  }
+
+  .btn-dashboard-active {
+    @apply flex items-center my-2 px-2 py-3 rounded-lg  bg-gray-900 text-slate-100 transition-all duration-300 cursor-pointer
   }
 }
